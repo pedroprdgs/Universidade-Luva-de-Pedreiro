@@ -13,5 +13,9 @@ body{
 }
 
 .navbar .nav-link:hover{
-  color: #d0d0d0
+  color: #d0d0d0;
+}
+
+img{
+  margin-top: 20%;
 }
