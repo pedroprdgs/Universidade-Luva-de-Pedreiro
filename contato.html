@@ -16,15 +16,16 @@
     <title>Universidade Luva de Predeiro - Início</title>
 </head>
 <body>
-    <nav class="navbar" style="background-color: #101244">
-        <section name="menu" class="container d-flex align-items-center justify-content-between">
-            <section name="logo" class="col-md-2 d-flex align-items-center justify-content-center">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Logo da Universidade Luva de Predeiro" class="img-fluid" style="max-width: 150px;">
-                </a>
-            </section>
-            <section name="nav-bar" class="col-md-10 d-flex align-items-center justify-content-end">
-                <ul class="nav">
+    <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark" style="background-color: #101244">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Logo da Universidade Luva de Predeiro" width="80" height="80" class="d-inline-block align-text-center m-2">
+            </a>
+            <button class="navbar-toggler m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item fs-4 bebas-neue-regular">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -35,8 +36,8 @@
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                 </ul>
-            </section>
-        </section>
+            </div>
+        </div>
     </nav>
     <section name="formulario" class="container align-items-center justify-content-center p-2">
         <h2 class="bebas-neue-regular text-white display-5 p-4">Entre em contato conosco</h2>
@@ -50,7 +51,7 @@
             <input type="submit" value="Enviar" class="btn btn-secondary">
         </form>
     </section>
-    <footer class="container d-flex align-items-center justify-content-center" style="height: 15vh;">
+    <footer class="container d-flex align-items-center justify-content-center">
         <p class="text-white text-center">&copy 2026 Universidade Luva de Predeiro. Nenhum direito reservado. Eu acho.</p>
     </footer>
 </body>
