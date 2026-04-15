@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Universidade Luva de Predeiro - Início</title>
+    <!--- Scripts -->
+    <script src="scripts/modal.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark" style="background-color: #101244">
@@ -46,7 +48,7 @@
         Obcaecati culpa accusantium doloremque, id sunt quibusdam mollitia iusto iure quia in totam dolore labore illo earum. Nam enim accusantium non laudantium totam aliquam assumenda, provident consequuntur molestias iusto velit.</p>
     </div>
     <div class="container my-5">
-        <h3 class="bebas-neue-regular text-white display-6 -4">Motivos para escolhar a nossa universidade</h3>
+        <h3 class="bebas-neue-regular text-white display-6">Motivos para escolhar a nossa universidade</h3>
         <ul class="text-white lead">
             <li>Você ganha muita <span style="color: red">AURA</span></li>
             <li>Aqui você não aprende. Você <span style="color: orange; font-size:xx-large;">RECEBE</span> o conhecimento</li>
@@ -54,9 +56,29 @@
             <li>Aulas semanais com o grande físico <span style="font-size: x-large;">Albert Einstein</span></li>
             <li>Temos aulas todos os dias de <span style="font-size: x-large; ">Sturdy</span></li>
         </ul>
+        <button type="button" class="btn btn-success mt-4" id="inscreverModalBtn">
+            <strong class="bebas-neue-regular display-6">Inscreva-se</strong>
+        </button>
     </div>
-    <div class="container d-flex align-items-center justify-content-center">
+    <div class="modal fade" id="inscreverModal" tabindex="-1" aria-labelledby="inscreverModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="inscreverModalLabel">Inscreva-se</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Deseja se inscrever na Universidade Luva de Predeiro? Clique em <strong>confirmar</strong> para ser redirecionado para a página de contato!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container d-flex align-items-center justify-content-center">
         <p class="text-white text-center">&copy 2026 Universidade Luva de Predeiro. Nenhum direito reservado. Eu acho.</p>
-    </div>
+    </footer>
 </body>
 </html>

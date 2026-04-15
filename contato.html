@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Universidade Luva de Predeiro - Início</title>
+    <!--- Scripts -->
+    <script src="scripts/toast.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark" style="background-color: #101244">
@@ -43,14 +45,26 @@
         <h2 class="bebas-neue-regular text-white display-5 p-4">Entre em contato conosco</h2>
         <form class="col-sm-6 bebas-neue-regular">
             <label for="email" style="color: white; font-size: x-large;">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email"><br>
             <label for="telefone" style="color: white; font-size: x-large;">telefone</label>
-            <input type="tel" name="tel" id="tel" class="form-control" placeholder="Digite seu telefone">
+            <input type="tel" name="tel" id="tel" class="form-control" placeholder="Digite seu telefone"><br>
             <label for="nome" style="color: white; font-size: x-large;">Nome Completo</label>
-            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro"><br>
-            <input type="submit" value="Enviar" class="btn btn-secondary">
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro"><br><br>
+            <button type="button" class="btn btn-secondary" id="liveToastBtn">
+                Enviar
+            </button>
         </form>
     </section>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Seu formulário foi enviado com sucesso!
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
     <footer class="container d-flex align-items-center justify-content-center">
         <p class="text-white text-center">&copy 2026 Universidade Luva de Predeiro. Nenhum direito reservado. Eu acho.</p>
     </footer>
